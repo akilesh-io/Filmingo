@@ -59,18 +59,6 @@ export const Hero = () => {
               Get Started
             </div>
           </div>
-          <button
-           className="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
-            data-tf-popup="Kjk8omIg"
-            data-tf-opacity="100"
-            data-tf-size="100"
-            data-tf-iframe-props="title=Filmingo"
-            data-tf-transitive-search-params
-            data-tf-medium="snippet"
-          >
-            Feed back
-          </button>
-          <script src="//embed.typeform.com/next/embed.js"></script>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 10, zIndex: 20 }}
