@@ -1,0 +1,40 @@
+---
+import "@fontsource/inter";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/My%20Brand/flamingo_ydhdcy.png" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Filmingo - The ultimate platform for shared movie and TV show experiences. Watch the latest films and series with friends and family in real-time, no matter where they are. Discover a vast library of captivating content and enjoy synchronized playback, chat features, and immersive group viewing. Join Filmingo and redefine the way you watch together."
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      html {
+        font-family: Inter;
+        background-color: #26272b;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>
