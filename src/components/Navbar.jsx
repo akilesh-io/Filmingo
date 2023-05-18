@@ -2,11 +2,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { GithubIcon } from "../assets/icons/GithubIcon";
-import { FeedbackModal } from "./Feedback";
+
 const navbarLinks = [
   { label: "Features", href: "#features", ariaLabel: "Features" },
   { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", ariaLabel: "Feedback" },
+  // { label: "Blog",href:"/blog", ariaLabel: "Blog" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
 
@@ -45,20 +45,16 @@ export const Navbar = () => {
         >
           <div className="hidden lg:flex h-full pl-12 pb-2">
             <script src="//embed.typeform.com/next/embed.js"></script>
-            {navbarLinks.map(({ href, label, ariaLabel }) =>
-              label !== "Feedback" ? (
-                <a
-                  className="navbar-link"
-                  href={href}
-                  aria-label={ariaLabel}
-                  key={label}
-                >
-                  {label}
-                </a>
-              ) : (
-                <FeedbackModal />
-              )
-            )}
+            {navbarLinks.map(({ href, label, ariaLabel }) => (
+              <a
+                className="navbar-link"
+                href={href}
+                aria-label={ariaLabel}
+                key={label}
+              >
+                {label}
+              </a>
+            ))}
           </div>
         </motion.div>
         <motion.div
@@ -71,7 +67,6 @@ export const Navbar = () => {
             <a
               className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              
               aria-label="sign in"
             >
               <GithubIcon />
@@ -103,27 +98,21 @@ export const Navbar = () => {
         "
             >
               <script src="//embed.typeform.com/next/embed.js"></script>
-              {navbarLinks.map(({ label, href, ariaLabel }) =>
-                label !== "Feedback" ? (
-                  <a
-                    key={label}
-                    className="navbar-link"
-                    href={href}
-                    onClick={() => setIsOpen(false)}
-                    aria-label={ariaLabel}
-                  >
-                    {label}
-                  </a>
-                ) : (
-                  <FeedbackModal 
-                  key={label} />
-                )
-              )}
+              {navbarLinks.map(({ label, href, ariaLabel }) => (
+                <a
+                  key={label}
+                  className="navbar-link"
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  aria-label={ariaLabel}
+                >
+                  {label}
+                </a>
+              ))}
 
               <a
                 className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                
               >
                 <GithubIcon />
                 Sign in
