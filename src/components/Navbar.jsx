@@ -44,7 +44,6 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="hidden lg:flex h-full pl-12 pb-2">
-            <script src="//embed.typeform.com/next/embed.js"></script>
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
                 className="navbar-link"
@@ -97,7 +96,6 @@ export const Navbar = () => {
         items-center gap-10 pb-10 border-y border-solid border-customDarkBg3 pt-10
         "
             >
-              <script src="//embed.typeform.com/next/embed.js"></script>
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
                   key={label}
