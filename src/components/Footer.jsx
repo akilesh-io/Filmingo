@@ -35,7 +35,7 @@ export const Footer = () => {
               <div className="flex justify-center lg:justify-start items-center grow basis-0">
                 <div className="text-white mr-2 text-6xl">
                   <img
-                    src="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/My%20Brand/flamingo_ydhdcy.png"
+                    src="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png"
                     alt="logo"
                     className="w-10 h-10"
                   />
