@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { GithubIcon } from "../assets/icons/GithubIcon";
+import { UserIcon } from "../assets/icons/UserIcon";
 
 const navbarLinks = [
   { label: "Features", href: "#features", ariaLabel: "Features" },
@@ -66,10 +66,10 @@ export const Navbar = () => {
             <a
               className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              aria-label="sign in"
+              aria-label="Join Filmingo"
             >
-              <GithubIcon />
-              <span className="pt-px">Sign in</span>
+              <UserIcon />
+              <span className="pt-px">Join Filmingo</span>
             </a>
           </div>
         </motion.div>
@@ -112,8 +112,8 @@ export const Navbar = () => {
                 className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               >
-                <GithubIcon />
-                Sign in
+                <UserIcon />
+                Join
               </a>
             </div>
           </motion.div>

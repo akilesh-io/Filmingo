@@ -1,4 +1,4 @@
-export const GithubIcon = () => (
+export const UserIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 96 960 960"
