@@ -64,6 +64,7 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a
+              href="https://app.filmingo.us"
               className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               aria-label="Join Filmingo"
@@ -109,6 +110,7 @@ export const Navbar = () => {
               ))}
 
               <a
+                href="https://app.filmingo.us"
                 className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               >

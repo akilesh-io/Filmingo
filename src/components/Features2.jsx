@@ -35,28 +35,27 @@ export const Features2 = () => (
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
             <span className="custom-block-subtitle">
-              Make Data-Driven Decisions
+            Uncover the Ease
             </span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Issue tracking you’ll enjoy using
+              Experience the Convenience
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">
-              Monitor and track data issues with ease using our intuitive and
-              efficient issue tracking system. Stay ahead of potential problems
-              and improve your workflow.
+            Discover the convenience of accessing and watching your favorite 
+            media content all in one place.
             </p>
             <ul className="mb-6 text-white">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Collaborative environment</span>
+                <span>Video and Audio chat</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Smart issue categorization</span>
+                <span>synchronized video content</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Customizable notifications</span>
+                <span>Minimalistic UI </span>
               </li>
             </ul>
           </div>

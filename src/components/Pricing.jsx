@@ -4,12 +4,21 @@ import { motion } from "framer-motion";
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-const pricingData = [
-  "Seamless integration",
-  "Real-time data visualization",
-  "Advanced predictive analytics",
-  "Collaborative environment",
-  "Responsive customer support",
+const beginnerPricingData = [
+  "synchronized video playback",
+  "Local media playback",
+  "Real-time video chat",
+  "Unlimited watch parties",
+  "Unlimited watch hours",
+  "URL video streaming",
+];
+
+const standardPricingData = [
+  "All Beginner features",
+  "Unlimited friends",
+  "Online torrent streaming",
+  "Early access to new features",
+  "Supporting the development of Filmingo",
 ];
 
 export const Pricing = () => {
@@ -36,11 +45,11 @@ export const Pricing = () => {
                 Find Your Perfect Fit
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Choose your best plan
+                Choose your plan
               </h2>
               <p className="mb-6 text-customGrayText">
-                Select the plan that suits your needs and benefit from our
-                analytics tools.
+                By choosing a plan, you will support my work and get access to
+                exclusive features
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -78,10 +87,10 @@ export const Pricing = () => {
                   </div>
 
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    The perfect way to get started.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
-                    {pricingData.map((text, index) => (
+                    {beginnerPricingData.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
@@ -90,7 +99,7 @@ export const Pricing = () => {
                   </ul>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => window.open("https://app.filmingo.us/", "_self")}
                   >
                     Get Started
                   </div>
@@ -110,22 +119,23 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    Unlock more features and elevate your data analysis.
+                    Unlock more features and elevate your experience
                   </p>
                   <ul className="mb-14 text-white">
-                    {pricingData.map((text, index) => (
+                    {standardPricingData.map((text, index) => (
                       <li className="mb-4 flex" key={`${text}-${index}`}>
                         <CheckArrowIcon />
                         <span>{text}</span>
                       </li>
                     ))}
                   </ul>
-                  <div
-                    className="inline-block text-center py-2 cursor-not-allowed px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
+                  <button
+                    className="cursor-not-allowed inline-block text-center py-2 px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
                     onClick={() => setIsModalOpen(true)}
+                    disabled
                   >
-                    Get Started
-                  </div>
+                    Coming Soon
+                  </button>
                 </div>
               </div>
             </div>
