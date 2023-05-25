@@ -1,9 +1,4 @@
 import { motion } from "framer-motion";
-
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
@@ -50,15 +45,15 @@ export const Features1 = () => {
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
               <div className="mb-4 py-3 pl-3 pr-2 rounded">
                 <img
-                  src={feature1}
-                  alt="f1"
+                  src="https://res.cloudinary.com/davkfrmah/image/upload/v1685020185/Filmingo/feature1_odnahq.jpg"
+                  alt="local media playback"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
-                  src={feature2}
-                  alt="f2"
+                  src="https://res.cloudinary.com/davkfrmah/image/upload/v1685020204/Filmingo/feature2_bjq5np.jpg"
+                  alt="Synced playback"
                   className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
                 />
               </div>
@@ -66,15 +61,15 @@ export const Features1 = () => {
             <div className="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
               <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature3}
-                  alt="f3"
+                  src="https://res.cloudinary.com/davkfrmah/image/upload/v1685020168/Filmingo/feature3_z0yk26.jpg"
+                  alt="Minimalistic UI"
                   className="rounded-xl  custom-border-gray"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
-                  src={feature4}
-                  alt="f4"
+                  src="https://res.cloudinary.com/davkfrmah/image/upload/v1685020158/Filmingo/feature4_cw8b1u.jpg"
+                  alt="Torrent Streaming"
                   className="rounded-xl  custom-border-gray"
                 />
               </div>

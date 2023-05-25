@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
 
-import dashboard from "../assets/images/dashboard.png";
-
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -67,8 +65,8 @@ export const Hero = () => {
         >
           <div className="relative w-screen flex justify-center ">
             <img
-              src={dashboard}
-              alt="123"
+              src="https://res.cloudinary.com/davkfrmah/image/upload/v1684766889/Filmingo/dashboard_bqrnbw.png"
+              alt="watch together dashboard"
               className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl custom-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
             />
           </div>
