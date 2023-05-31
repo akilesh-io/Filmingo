@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import {Email} from "./Email";
 
 const beginnerPricingData = [
   "synchronized video playback",
@@ -129,13 +130,13 @@ export const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    className="cursor-not-allowed inline-block text-center py-2 px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
+                  {/* <button
+                    className=" inline-block text-center py-2 px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
                     onClick={() => setIsModalOpen(true)}
-                    disabled
                   >
                     Coming Soon
-                  </button>
+                  </button> */}
+                  <Email />
                 </div>
               </div>
             </div>
