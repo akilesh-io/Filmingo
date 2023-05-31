@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
-import {Email} from "./Email";
 
 const beginnerPricingData = [
   "synchronized video playback",
@@ -130,13 +129,24 @@ export const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  {/* <button
-                    className=" inline-block text-center py-2 px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
-                    onClick={() => setIsModalOpen(true)}
-                  >
-                    Coming Soon
-                  </button> */}
-                  <Email />
+                  <div>
+                    <script
+                        src="//embed.typeform.com/next/embed.js"
+                        async
+                        strategy="afterInteractive"
+                    ></script>
+                    <button
+                        id="feedback-button"
+                        className="inline-block text-center py-2 px-4 w-full leading-loose mt-20 border-solid text-white border border-customPrimary rounded-xl rounded-t-xl font-bold transition"
+                        data-tf-popup="AEQMAcS3"
+                        data-tf-opacity="100"
+                        data-tf-iframe-props="title=Newsletter Signup Form (copy)"
+                        data-tf-transitive-search-params
+                        data-tf-medium="snippet"
+                    >
+                      Coming Soon
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
