@@ -144,7 +144,7 @@ export const Pricing = () => {
                         data-tf-transitive-search-params
                         data-tf-medium="snippet"
                     >
-                      Coming Soon
+                      Join Us
                     </button>
                   </div>
                 </div>
