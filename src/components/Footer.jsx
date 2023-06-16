@@ -29,13 +29,13 @@ export const Footer = () => {
               <div className="w-fit  mx-auto">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="https://linkedin.com/in/hselikA"
+                  href="https://linkedin.com/in/akilesh-io"
                 >
                   <LinkedinIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="https://twitter.com/hselikA"
+                  href="https://twitter.com/akilesh_io"
                 >
                   <TwitterIcon />
                 </a>
