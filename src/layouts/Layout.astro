@@ -5,7 +5,7 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
-
+import { SEO } from "astro-seo";
 export interface Props {
   title: string;
 }
@@ -16,51 +16,109 @@ const { title } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere."
+    <SEO
+      title={title}
+      description="Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere."
+      charset="UTF-8"
+      openGraph={{
+        basic: {
+          title: `${title} | Filmingo`,
+          type: "website",
+          image:
+            "https://res.cloudinary.com/davkfrmah/image/upload/v1686146984/Filmingo/temp_film_bvuced.jpg",
+          url: "https://filmingo.us",
+        },
+        optional: {
+          description:
+            "Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere.",
+          determiner: "the",
+          locale: "en_US",
+          localeAlternate: ["en_US", "en_GB", "en_IN"],
+          siteName: "Filmingo",
+        },
+        image: {
+          url: "https://res.cloudinary.com/davkfrmah/image/upload/v1686146984/Filmingo/temp_film_bvuced.jpg",
+          alt: "Filmingo Logo",
+          width: 1200,
+          height: 630,
+        },
+      }}
+      twitter={{
+        title: `${title} | Filmingo`,
+        site: "@akilesh_io",
+        creator: "@akilesh_io",
+        description:
+          "Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere.",
+        image:
+          "https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png",
+        card: "summary_large_image",
+        imageAlt: "Filmingo Logo",
+      }}
+      extend={{
+        link: [
+          {
+            rel: "icon",
+            type: "image/png",
+            href: "https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png",
+          },
+        ],
+        meta: [
+          {
+            name: "linkedin:title",
+            content: "Filmingo",
+          },
+          {
+            name: "linkedin:site",
+            content: "@akilesh-io",
+          },
+          {
+            name: "linkedin:creator",
+            content: "@akilesh-io",
+          },
+          {
+            name: "linkedin:card",
+            content: "summary_large_image",
+          },
+          {
+            name: "linkedin:description",
+            content:
+              "Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere.",
+          },
+          {
+            name: "linkedin:image",
+            content:
+              "https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png",
+          },
+          {
+            name: "linkedin:imageAlt",
+            content: "Filmingo Logo",
+          },
+        ],
+      }}
     />
-    <meta property="og:title" content={title} />
-    <meta
-      property="og:description"
-      content="Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://filmingo.me" />
-    <meta property="og:image" content="https://res.cloudinary.com/davkfrmah/image/upload/v1686146984/Filmingo/temp_film_bvuced.jpg" />
-    <meta property="og:image:alt" content="Filmingo Logo" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@filmingo" />
-    <meta name="twitter:creator" content="@filmingo" />
-    <meta name="twitter:title" content={title} />
-    <meta
-      name="twitter:description"
-      content="Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere."
-    />
-    <meta name="twitter:image" content="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png" />
-    <meta name="twitter:image:alt" content="Filmingo Logo" />
+    <!-- linkedin={{
+        title: "Filmingo",
+        site: "@akilesh-io",
+        creator: "@akilesh-io",
+        card: "summary_large_image",
+        description:
+          "Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere.",
+        image:
+          "https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png",
+        imageAlt: "Filmingo Logo",
+      }} -->
 
-    <meta name="linkedin:card" content="summary_large_image" />
-    <meta name="linkedin:site" content="@filmingo" />
-    <meta name="linkedin:creator" content="@filmingo" />
-    <meta name="linkedin:title" content={title} />
-    <meta
-      name="linkedin:description"
-      content="Filmingo - Experience the joy of watching movies together online with Filmingo. Stream and enjoy synchronized movie viewing with friends from anywhere."
-    />
-    <meta name="linkedin:image" content="https://res.cloudinary.com/davkfrmah/image/upload/v1684239381/Filmingo/flamingo_logo.png" />
-    <meta name="linkedin:image:alt" content="Filmingo Logo" />
-    
-    
-    <title>{title}</title>
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width" />
+
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      /></noscript
+    >
   </head>
   <body>
     <slot />
