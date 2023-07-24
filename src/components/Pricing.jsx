@@ -42,14 +42,13 @@ export const Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">
-                Find Your Perfect Fit
+                Find the right plan for you
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Choose your plan
+              Plans & Pricing
               </h2>
               <p className="mb-6 text-customGrayText">
-                By choosing a plan, you will support my work and get access to
-                exclusive features
+              The tool is 100% free! This is just a generic section.
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -79,10 +78,10 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      $0
+                      Free
                     </div>
                     <div className="text-gray-500">
-                      {isMonthly ? "/ month" : "/ year"}
+                      {/* {isMonthly ? "/ month" : "/ year"} */}
                     </div>
                   </div>
 
@@ -112,14 +111,14 @@ export const Pricing = () => {
                   </h4>
                   <div className="flex justify-start items-end">
                     <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
-                      {isMonthly ? "$0.44" : "$4.74"}
+                      {isMonthly ? "$0" : "$0"}
                     </div>
                     <div className="text-gray-500">
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    Unlock more features and elevate your experience
+                    These features and still in development stage.
                   </p>
                   <ul className="mb-14 text-white">
                     {standardPricingData.map((text, index) => (
