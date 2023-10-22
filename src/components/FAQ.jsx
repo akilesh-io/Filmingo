@@ -22,11 +22,6 @@ const FAQData = [
     answer:
       "To play torrent files / magnet link, simply copy the torrent file or magnet link and paste it into the player. You can also click on the 'Paste URL' button to paste the URL from your clipboard.",
   },
-  {
-    question: "What's your refund policy?",
-    answer:
-      "I offer a 14-day money-back guarantee on all my plans. If you're not satisfied with my product, simply contact me within 14 days of purchase for a full refund.",
-  },
 ];
 
 export const FAQ = () => (
