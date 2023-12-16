@@ -63,15 +63,8 @@ export const Navbar = () => {
           exit={{ opacity: 0 }}
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
-          <button
-              id="feedback-button"
-              className="text-white custom-border-gray rounded-xl
-                bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              data-tf-popup="AEQMAcS3"
-              data-tf-opacity="100"
-              data-tf-iframe-props="title=Newsletter Signup Form (copy)"
-              data-tf-transitive-search-params
-              data-tf-medium="snippet"
+            <button className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+            onClick={() => window.open("https://app.filmingo.us/", "_self")}
             >
               <UserIcon />
               <span className="pt-px">Join Filmingo</span>
