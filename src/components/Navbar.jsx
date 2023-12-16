@@ -67,7 +67,7 @@ export const Navbar = () => {
             onClick={() => window.open("https://app.filmingo.us/", "_self")}
             >
               <UserIcon />
-              <span className="pt-px">Join Filmingo</span>
+              <span className="pt-px">Stream</span>
             </button>
           </div>
         </motion.div>
@@ -112,7 +112,7 @@ export const Navbar = () => {
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               >
                 <UserIcon />
-                Join
+                Stream
               </a>
             </div>
           </motion.div>
