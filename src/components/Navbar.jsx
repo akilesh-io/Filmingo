@@ -64,7 +64,7 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <button className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-            onClick={() => window.open("https://app.filmingo.us/", "_self")}
+            onClick={() => window.open("https://us.akilesh.in/", "_self")}
             >
               <UserIcon />
               <span className="pt-px">Stream</span>
@@ -107,7 +107,7 @@ export const Navbar = () => {
               ))}
 
               <a
-                href="https://app.filmingo.us"
+                href="https://us.akilesh.in"
                 className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               >

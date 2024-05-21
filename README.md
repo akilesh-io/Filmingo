@@ -7,7 +7,7 @@ Dark themed website template built on AstroJS, designed for technological startu
 Astro, React, Tailwind, Framer Motion
 
 ## Live link
-[https://filmingo.us/](https://filmingo.us/)
+[https://filmingo.akilesh.in/](https://filmingo.akilesh.in/)
 
 ##  Project Structure
 

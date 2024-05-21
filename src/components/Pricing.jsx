@@ -98,7 +98,7 @@ export const Pricing = () => {
                   </ul>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => window.open("https://app.filmingo.us/", "_self")}
+                    onClick={() => window.open("https://us.akilesh.in/", "_self")}
                   >
                     Get Started
                   </div>
